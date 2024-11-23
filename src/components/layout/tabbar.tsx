@@ -5,7 +5,7 @@ import UserTable from '../user/table.user';
 const TabBar = () => {
     return (
         <Tabs
-            defaultActiveKey="profile"
+            defaultActiveKey="user"
             id="uncontrolled-tab-example"
             className="mb-3"
         >

@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <Navbar className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+                <Navbar.Brand href="#home">Nguyễn Thành Đạt Tutorial Redux</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
