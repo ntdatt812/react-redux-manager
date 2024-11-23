@@ -36,9 +36,11 @@ function App() {
           </div>
           <div>
             <button
-              onClick={() => dispatch(
-                decreasing()
-              )}
+              onClick={() => {
+                dispatch(
+                  decreasing()
+                )
+              }}
             >Decreasing - 1</button>
           </div>
         </div>
