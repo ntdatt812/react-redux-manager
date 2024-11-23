@@ -11,7 +11,15 @@ export const fetchListUsers = createAsyncThunk(
     },
 )
 
-const initialState = {
+interface IUser {
+    id: number;
+    name: string;
+    email: string;
+}
+
+const initialState: {
+    listUser: IUser[]
+} = {
     listUser: []
 }
 
@@ -25,7 +33,7 @@ export const userSlice = createSlice({
         // Add reducers for additional action types here, and handle loading state as needed
         builder.addCase(fetchListUsers.fulfilled, (state, action) => {
             // Add user to the state array
-            console.log(">>>> check action: ", action.payload)
+            state.listUser = action.payload
         })
     },
 })
