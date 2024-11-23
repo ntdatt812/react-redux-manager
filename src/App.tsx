@@ -3,7 +3,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from './redux/store'
-import { increment } from './redux/counter/counter.slide'
+import { decreasing, increment } from './redux/counter/counter.slide'
 
 function App() {
 
@@ -25,14 +25,24 @@ function App() {
         <h1>
           My current count = {count.value}
         </h1>
-        <div>
-          <button
-            onClick={() => dispatch(
-              increment()
-            )}
-          >Increase + 1</button>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <div >
+            <button
+              onClick={() => dispatch(
+                increment()
+              )}
+            >Increase + 10</button>
+          </div>
+          <div>
+            <button
+              onClick={() => dispatch(
+                decreasing()
+              )}
+            >Decreasing - 1</button>
+          </div>
         </div>
-      </div>
+
+      </div >
     </>
   )
 }
